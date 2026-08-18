@@ -1,1 +1,41 @@
-# P1-BSIT-S-8
+name=input("Enter Customer Name: ")
+contact=input("Enter Contact Number: ")
+address=input("Enter Address: ")
+Product1=input("Enter Item: ")
+price1=int(input("Enter Price: ") )
+quantity1=int(input("Enter Quantity: ") )
+Product2=input("Enter Item: ")
+price2=int(input("Enter Price: ") )
+quantity2=int(input("Enter Quantity: " ) )
+Product3=input("Enter Item: ")
+price3=int(input("Enter Price: ") )
+quantity3=int(input("Enter Quantity: ") )
+amount1= price1 * quantity1
+amount2= price2 * quantity2
+amount3= price3 * quantity3
+subtotal = amount1 + amount2 + amount3
+discount=float(subtotal * 0.10)
+total = subtotal - discount
+
+
+print("========================================")
+print("                                        ")
+print("               ECHO'S SHOP               ")
+print("                                        ")
+print("========================================")
+print("Customer Name: "  , name  )
+print("                                        ")
+print("Contact No: "  ,  contact )
+print("                                        ")
+print("Address: "  , address  )
+print("                                        ")
+print("========================================")
+print(" Product  Price   Qty    Amount ")
+print(Product1,"  ",price1,"   ",quantity1,"   " ,amount1, )
+print(Product2,"  ",price2,"   ",quantity2,"   " ,amount2, )
+print(Product3,"  ",price3,"   ",quantity3,"   " ,amount3, )
+print("========================================")
+print("Subtotal: ", subtotal)
+print("Discount(25%): ", discount)
+print("========================================")
+print("Total: ", total)
